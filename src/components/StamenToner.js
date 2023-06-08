@@ -6,12 +6,14 @@ import { stamenToner } from 'pigeon-maps/providers'
 
 export function StamenToner() {
     return (
-        <Map
-          provider={stamenToner}
-          dprs={[1, 2]} // this provider supports HiDPI tiles
-          height={200}
-          defaultCenter={[50.879, 4.6997]}
-          defaultZoom={11}><Marker width={50} anchor={[50.879, 4.6997]} color='red'/></Map>
+
+<Map provider={stamenToner}
+    dprs={[1, 2]} // this provider supports HiDPI tiles
+    color="red"
+    defaultCenter={[50.879, 4.6997]}
+    defaultZoom={11}
+ width={window.innerWidth} height={window.innerHeight}  >
+        </Map>
       )
 }
 

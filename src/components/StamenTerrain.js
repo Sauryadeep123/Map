@@ -17,12 +17,12 @@ export function StamenTerrain() {
       };
     return (
         <>
-        <Map
-          provider={stamenTerrain}
-          dprs={[1, 2]} // this provider supports HiDPI tiles
-          height={200}
-          defaultCenter={[50.879, 4.6997]}
-          defaultZoom={11}>
+        
+<Map  provider={stamenTerrain}
+    dprs={[1, 2]} // this provider supports HiDPI tiles
+    
+    
+    defaultZoom={11} width={window.innerWidth} height={window.innerHeight} defaultCenter={[50.879, 4.6997]} >
             <Marker width={50} anchor={[50.879, 4.6997]} color='red' info="leuven" onMouseEnter={handleMarkerHover("leuven")}
             onMouseLeave={handleMarkerLeave}/>
             </Map>

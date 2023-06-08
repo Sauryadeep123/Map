@@ -21,7 +21,7 @@ export function Osm() {
         <>
         <Map
           provider={osm}
-          height={200}
+          width={window.innerWidth} height={window.innerHeight}
           defaultCenter={[50.879, 4.6997]}
           defaultZoom={11}>
             {/* {markers.map((marker) => (
