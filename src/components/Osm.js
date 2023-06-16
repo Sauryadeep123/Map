@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Map, Marker } from "pigeon-maps"
 import { osm } from 'pigeon-maps/providers'
-
+import { data1 } from "./data";
 export function Osm() {
     const markers = [
         { id: 1, position:[50.879, 4.6997],link:"https://www.youtube.com/" ,info:"leuven"},
@@ -19,18 +19,18 @@ export function Osm() {
       }
     return (
         <>
-        <Map
+        <Map zoom={3}
           provider={osm}
           width={window.innerWidth} height={window.innerHeight}
           defaultCenter={[50.879, 4.6997]}
-          defaultZoom={11}>
+          >
             {/* {markers.map((marker) => (
 
          <a key={marker.id} href={marker.link} >
                 <Marker anchor={marker.position} payload={marker.id} color="orange"/></a>
 
       ))} */}
-       {markers.map((marker) => (
+       {/* {markers.map((marker) => (
        
           <Marker anchor={marker.position} payload={marker.id}  onClick={handleMarkerClick(marker.link)} color="red"
          
@@ -40,7 +40,18 @@ export function Osm() {
        
       )
       
-      )}
+      )} */}
+       {data1.map((marker) => (
+       
+       <Marker anchor={marker.position} payload={marker.id}   color="red" zoom={3}
+      
+       />
+     
+      
+    
+   )
+   
+   )}
           </Map>
           
           </>

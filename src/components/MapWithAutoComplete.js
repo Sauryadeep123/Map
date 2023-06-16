@@ -67,7 +67,7 @@ const MapWithAutocomplete = () => {
         value={searchValue}
         onChange={(e) => fetchLocationSuggestions(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch}>Search</button><br/>
 
       {suggestions.length > 0 && (
         <ul>

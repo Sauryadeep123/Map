@@ -1,0 +1,62 @@
+
+#box {
+    position: relative; 
+    z-index: 1; 
+   
+   
+  }
+  
+  #boxa {
+    position: absolute; 
+    z-index: 1;
+ 
+  }
+  /* MapContainer.css */
+/* MapContainer.css */
+
+.custom-marker {
+  position: relative;
+  display: inline-block;
+}
+
+.hovered {
+  /* Define styles for the hovered marker */
+  /* For example, change the background color or add a border */
+  background-color: red;
+}
+
+.custom-marker .pigeon-marker {
+  /* Adjust the default marker styles as needed */
+  /* For example, change the color, size, or add additional CSS properties */
+}
+
+.custom-marker .pigeon-marker:hover {
+  /* Adjust the hover styles for the marker */
+  /* For example, change the color or size when hovered */
+}
+#parent{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+
+
+}
+#markdata{
+  height: auto;
+  width: auto;
+  margin: 30px;
+  position: absolute;
+  border: 2px solid white;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+
+}
+#mark{
+  margin: 10px;
+}
+.tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
